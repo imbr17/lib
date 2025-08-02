@@ -12,6 +12,9 @@
     "db:migrate": "prisma migrate dev",
     "db:reset": "prisma migrate reset"
   },
+  "scripts": {
+  "build": "prisma generate && next build"
+},
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
@@ -97,9 +100,6 @@
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
-  },
-  "scripts": {
-  "build": "prisma generate && next build"
-}
+  }
 
 }
